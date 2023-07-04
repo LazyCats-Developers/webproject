@@ -1,10 +1,8 @@
 function CaseCard({ data, index }) {
   return (
-    <article className="group bg-white flex flex-col w-full drop-shadow-md mb-4 md:w-56 lg:w-64 xl:w-72 2xl:w-80">
-      <div className="">
-        <div className="relative h-full lg:h-48 overflow-hidden">
-          <img id={data} className="group-hover:scale-110 transition duration-300 ease-in-out" src={data.imageUrl} alt="" />
-        </div>
+    <article className="group bg-white flex flex-col w-full drop-shadow-md lg:w-96 rounded-lg">
+      <div className="relative h-full xl:h-64 overflow-hidden rounded-t-lg">
+        <img id={data} className="scale-110 group-hover:scale-125 transition duration-300 ease-in-out" src={data.imageUrl} alt="" />
       </div>
       <div className="flex flex-1 flex-col justify-between p-6">
         <div className="">

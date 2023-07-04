@@ -1,25 +1,21 @@
-function Header(){
-    return(
-      <main>
-      <div className="relative px-6 lg:px-8">
-        <div className="mx-auto max-w-full xl:mx-12 xl:pt-40 xl:pb-64 lg:pt-40 lg:pb-48 pt-24 pb-12">
-          <div>
-            <div>
-              <h1 className="text-4xl font-semibold tracking-tight pb-16  sm:text-7xl">
+function Header() {
+  return (
+    <header>
+      <div className="px-4 md:px-10">
+        <div className="max-w-full pt-24 pb-12 lg:pt-40 lg:pb-48">
+          <div className="flex lg:justify-center">
+            <div className="flex flex-col lg:w-1/2">
+              <h1 className="text-5xl font-semibold tracking-tight pb-4 lg:text-6xl">
                 Productos
               </h1>
-              <p className="mt-16 text-2xl max-w-3xl leading-8 text-black">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
-                  amet fugiat veniam occaecat fugiat aliqua.
-                </p>
-            </div>
-            <div className="absolute inset-x-0 top-[calc(100%-20rem)] -z-10 transform-gpu overflow-hidden bg-white blur-lg lg:top-[calc(100%-45rem)] sm:top-[calc(100%-30rem)]">
-              <img src="https://bafybeicgamofiuvkc6wjxl4wwzzh6pdovhcvvyc2gw5verruiolnykzz3i.ipfs.w3s.link/bbub3.jpg" className='w-full h-full object-cover'/>
+              <p className="text-xl max-w-3xl leading-8 text-black ">
+                Conoce todos nuestros productos en un solo lugar.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </main>
+    </header>
   )
 }
 export default Header

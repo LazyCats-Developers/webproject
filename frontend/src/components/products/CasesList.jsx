@@ -118,14 +118,17 @@ function CasesList() {
     },
   ]
   return (
-    <main className=" bg-gray-50 px-4 pt-16 pb-16">
-      <div className="flex justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-4 md:grid-cols-3 lg:grid-cols-4 xl:gap-6 2xl:gap-10">
-          {posts.map((post, index) => (
-            <CaseCard index={index} data={post} />
-          ))}
-        </div>
+    <main>
+      <div className="bg-gray-50 px-4 md:px-10">
+        <section className="flex justify-center py-4 md:py-10 xl:py-10">
+          <div className="grid grid-cols-1 gap-4 md:gap-10 lg:grid-cols-2 xl:grid-cols-3">
+            {posts.map((post, index) => (
+              <CaseCard index={index} data={post} />
+            ))}
+          </div>
+        </section>
       </div>
+
     </main>
   )
 }
