@@ -49,7 +49,7 @@ function Blog({
                                 })
                                 const fechtData = async()=>{
                                     try{
-                                        const res = await axios.post(`${process.env.REACT_APP_API_URL}/api/blog/create`, body, config)
+                                        const res = await axios.post(`${import.meta.env.VITE_REACT_APP_URL}/api/blog/create`, body, config)
                                         if(res.status === 200){
                                             get_author_blog_list()
                                         }

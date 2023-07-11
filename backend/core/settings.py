@@ -104,6 +104,16 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
+    
+    'test_default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'initial_db_lazycat_test',
+        'USER': 'lazycat',
+        'PASSWORD': 'Humi199014.',
+        'HOST': 'lazycat-1.clccivstvrq2.us-east-2.rds.amazonaws.com',
+        'PORT': '5432',
+    },
+    
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
